@@ -695,8 +695,22 @@ main {
   gap: 8px;
 }
 
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skill-cat-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .skill-chip {
-  padding: 8px 16px;
+  padding: 7px 14px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -704,8 +718,6 @@ main {
   font-weight: 500;
   color: var(--text-soft);
   transition: all var(--transition);
-  min-width: 60px;
-  min-height: 32px;
   display: inline-block;
 }
 
@@ -714,12 +726,6 @@ main {
   border-color: var(--accent-1);
   color: var(--text);
   transform: translateY(-2px);
-}
-
-.skill-chip:empty::before {
-  content: '+ add';
-  color: var(--text-muted);
-  font-style: italic;
 }
 
 .stats-row {
