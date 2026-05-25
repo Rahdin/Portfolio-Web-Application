@@ -52,7 +52,7 @@ body{
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
-  /* static, cheap background: dot grid + soft glow — no animation, no blur filters */
+  /* static, cheap background: dot grid + soft glow, no animation, no blur filters */
   background-image:
     radial-gradient(circle at 18% -10%, rgba(59,130,246,.16), transparent 45%),
     radial-gradient(circle at 90% 8%, rgba(34,211,238,.12), transparent 42%),
@@ -144,7 +144,7 @@ img{display:block;max-width:100%}
 /* ============================================================
    LAYOUT
    ============================================================ */
-.section{max-width:var(--maxw);margin:0 auto;padding:110px 24px}
+.section{max-width:var(--maxw);margin:0 auto;padding:110px 24px;scroll-margin-top:80px}
 @media(max-width:640px){.section{padding:80px 20px}}
 
 .sec-head{margin-bottom:48px;max-width:760px}
@@ -205,7 +205,7 @@ img{display:block;max-width:100%}
 .spark polyline{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.4s var(--ease) .3s forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 
-/* marquee — pure CSS transform loop, very cheap */
+/* marquee: pure CSS transform loop, very cheap */
 .marquee{margin-top:60px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 .marquee-track{display:flex;gap:22px;width:max-content;animation:scroll 26s linear infinite;font-family:var(--disp);font-weight:600;color:var(--faint);font-size:15px}
 .marquee-track span{white-space:nowrap}
@@ -236,7 +236,7 @@ img{display:block;max-width:100%}
    ============================================================ */
 .cases{display:flex;flex-direction:column;gap:22px}
 .case{
-  display:grid;grid-template-columns:128px 1fr;gap:28px;
+  display:grid;grid-template-columns:128px 1fr;gap:28px;scroll-margin-top:90px;
   background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:30px;
   transition:transform .3s var(--ease),border-color .3s var(--ease),background .3s var(--ease);
   will-change:transform;
@@ -345,7 +345,7 @@ img{display:block;max-width:100%}
 .to-top:hover{background:var(--surface-2);transform:translateY(-2px)}
 
 /* ============================================================
-   REVEAL (transform/opacity only — GPU)
+   REVEAL (transform/opacity only, GPU)
    ============================================================ */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}
