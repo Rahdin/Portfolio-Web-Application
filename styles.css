@@ -250,6 +250,8 @@ img{display:block;max-width:100%}
 }
 .case-visual.v2{background:linear-gradient(150deg,rgba(34,211,238,.16),rgba(52,211,153,.1));color:var(--brand-2)}
 .case-visual.v3{background:linear-gradient(150deg,rgba(99,102,241,.18),rgba(59,130,246,.1));color:#a5b4fc}
+.case-visual.v4{background:linear-gradient(150deg,rgba(16,185,129,.18),rgba(34,211,238,.1));color:#6ee7b7}
+.case-visual.v5{background:linear-gradient(150deg,rgba(168,85,247,.18),rgba(99,102,241,.1));color:#c4b5fd}
 .case-visual svg{width:46px;height:46px}
 .case-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:13px}
 .case-tags span{font-size:11.5px;font-weight:600;letter-spacing:.03em;color:var(--brand-2);background:rgba(34,211,238,.1);border:1px solid rgba(34,211,238,.2);padding:4px 10px;border-radius:999px}
@@ -263,24 +265,6 @@ img{display:block;max-width:100%}
 .case-links a{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:var(--text);border:1px solid var(--border-2);padding:9px 16px;border-radius:999px;transition:background .2s,transform .2s var(--ease)}
 .case-links a:hover{background:var(--surface-2);transform:translateY(-2px)}
 .case-links svg{width:17px;height:17px}
-
-/* more projects */
-.more-head{font-family:var(--disp);font-size:1.05rem;font-weight:600;color:var(--muted);margin:54px 0 20px;letter-spacing:.02em}
-.more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:780px){.more-grid{grid-template-columns:1fr}}
-.mini{
-  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:22px;
-  transition:transform .25s var(--ease),border-color .25s,background .25s;display:block;
-}
-.mini:hover{transform:translateY(-4px);border-color:var(--border-2);background:var(--surface-2)}
-.mini-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
-.mini-top svg{width:26px;height:26px;color:var(--brand-2)}
-.mini-arrow{color:var(--faint);font-size:16px;transition:transform .25s var(--ease)}
-.mini:hover .mini-arrow{transform:translate(3px,-3px);color:var(--brand-2)}
-.mini h4{font-family:var(--disp);font-size:1.05rem;font-weight:600;margin-bottom:8px}
-.mini p{font-size:13.5px;color:var(--muted);margin-bottom:14px}
-.mini-tags{display:flex;flex-wrap:wrap;gap:6px}
-.mini-tags span{font-size:11px;color:var(--faint);background:var(--surface-2);padding:3px 9px;border-radius:999px}
 
 /* ============================================================
    SKILLS
@@ -353,8 +337,8 @@ img{display:block;max-width:100%}
 /* stagger inside groups */
 .cases .case:nth-child(2){transition-delay:.08s}
 .cases .case:nth-child(3){transition-delay:.16s}
-.more-grid .mini:nth-child(2){transition-delay:.08s}
-.more-grid .mini:nth-child(3){transition-delay:.16s}
+.cases .case:nth-child(4){transition-delay:.24s}
+.cases .case:nth-child(5){transition-delay:.32s}
 .skills-grid .skill-card:nth-child(2){transition-delay:.07s}
 .skills-grid .skill-card:nth-child(3){transition-delay:.14s}
 .skills-grid .skill-card:nth-child(4){transition-delay:.21s}
